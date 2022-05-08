@@ -9,22 +9,35 @@
   "author": "zgsgs <2087108700@qq.com> (https://github.com/zgsgs)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zgsgs/eslint-config.git"
+    "url": "git+https://github.com/zgsgs/configs.git"
   },
   "scripts": {
-    "lint": "eslint .",
-    "prepare": "pnpm -r run stub",
+    "lint": "lint-staged",
+    "prepare": "husky install && pnpm -r run stub",
     "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public"
   },
   "bugs": {
-    "url": "https://github.com/zgsgs/eslint-config/issues"
+    "url": "https://github.com/zgsgs/configs/issues"
   },
-  "homepage": "https://github.com/zgsgs/eslint-config#readme",
+  "homepage": "https://github.com/zgsgs/configs#readme",
   "devDependencies": {
+    "@commitlint/cli": "^16.2.4",
+    "@commitlint/config-conventional": "^16.2.4",
     "@zgsgs/eslint-config": "workspace:*",
     "bumpp": "^7.1.1",
     "eslint": "^8.15.0",
     "eslint-plugin-zgsgs": "workspace:*",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.4.1",
     "typescript": "^4.6.4"
+  },
+  "lint-staged": {
+    "*.{vue,js,jsx,ts,tsx,json}": [
+      "eslint --fix",
+      "git add ."
+    ]
+  },
+  "eslintConfig": {
+    "extends": "@zgsgs"
   }
 }

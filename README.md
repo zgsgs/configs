@@ -38,6 +38,17 @@ pnpm add -D eslint @zgsgs/eslint-config
 }
 ```
 
+OR
+
+```json
+// package.json
+{
+  "eslintConfig": {
+    "extends": "@zgsgs"
+  }
+}
+```
+
 > You don't need `.eslintignore` normally as it has been provided by the preset.
 
 ### Add script for package.json
@@ -67,6 +78,50 @@ Create `.vscode/settings.json`
 ```
 
 > It is recommended not to use prettier when using eslint. This configuration has done quite a bit of formatting lint, leaving the rest of the flexibility and style to the developer.
+
+## VS Code Settings
+
+---
+
+Copy the `.vscode` directory go to Your Project Root Directory
+
+### Other Setting
+
+> - [Default setting](https://code.visualstudio.com/docs/getstarted/settings#_default-settings)
+> - [File Nesting Config for VS Code](https://github.com/antfu/vscode-file-nesting-config)
+
+## Github Setting
+
+Copy the `.github` directory go to Your Project Root Directory
+
+## Complete the commit message specification restriction and repair using Husky & lint-staged & COMMITLINT
+
+- Copy the `.husky` directory and `commitlint.config.js` go to Your Project Root Directory
+- Edit your `.package.json`
+
+```json
+{
+  "scripts": {
+    "lint": "lint-staged",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{vue,js,jsx,ts,tsx,json}": [
+      "eslint --fix",
+      "git add ." // Note that all files are automatically saved here, please use with `.gitignore`
+    ]
+  }
+}
+```
+
+## Other configuration files
+
+- `.editorconfig` - Edit config
+- `.gitignore` Git ignore special files
+- `LICENSE` Open Source LICENSE
+- `netlify.toml` Netlify platform configuration
+- `pnpm-workspace.yaml` defines the root of the and enables you to include / exclude directories from the workspace.
+- `renovate.json` Use renovate to monitor third-party dependent updates
 
 ## Check Also
 

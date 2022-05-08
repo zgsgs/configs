@@ -1,0 +1,40 @@
+{
+  "recommendations": [
+    // theme
+    "github.github-vscode-theme",
+    "emmanuelbeziat.vscode-great-icons",
+    // git
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+    "redjue.git-commit-plugin",
+    "github.vscode-pull-request-github",
+    // code guide
+    "wscats.vue",
+    "antfu.unocss",
+    "github.copilot",
+    "mikestead.dotenv",
+    "johnsoncodehk.volar",
+    "dbaeumer.vscode-eslint",
+    "dariofuzinato.vue-peek",
+    "pranaygp.vscode-css-peek",
+    "editorconfig.editorconfig",
+    "jimdong.naive-ui-snippets",
+    "johnsoncodehk.vscode-typescript-vue-plugin",
+    // utils
+    "antfu.iconify",
+    "chrmarti.regex",
+    "lokalise.i18n-ally",
+    "steoates.autoimport",
+    "2gua.rainbow-brackets",
+    "ritwickdey.liveserver",
+    "simonsiefke.svg-preview",
+    "naumovs.color-highlight",
+    "yzhang.markdown-all-in-one",
+    "alefragnani.project-manager",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "formulahendry.auto-complete-tag",
+    "christian-kohler.path-intellisense",
+    "kisstkondoros.vscode-gutter-preview"
+  ]
+}

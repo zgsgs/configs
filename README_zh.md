@@ -38,6 +38,17 @@ pnpm add -D eslint @zgsgs/eslint-config
 }
 ```
 
+或者
+
+```json
+// package.json
+{
+  "eslintConfig": {
+    "extends": "@zgsgs"
+  }
+}
+```
+
 > 正常情况下，你不需要 `.eslintignore`，因为它已由预设提供。
 
 ### 为 package.json 添加脚本
@@ -67,6 +78,50 @@ pnpm add -D eslint @zgsgs/eslint-config
 ```
 
 当使用 eslint 时，建议不要使用 prettier。这个配置已经完成了相当多的格式化工作，剩下的灵活性和样式留给了开发人员。
+
+## VS Code 设置
+
+---
+
+将 `.vscode` 目录复制到您的项目根目录
+
+### 其他设置
+
+> - [Default setting](https://code.visualstudio.com/docs/getstarted/settings#_default-settings)
+> - [File Nesting Config for VS Code](https://github.com/antfu/vscode-file-nesting-config)
+
+## Github 设置
+
+将 `.github` 目录复制到您的项目根目录
+
+## 使用 husky & lint-staged & commitlint 完成 commit message 规范限制和修复
+
+- 将 `.husky` 目录和 `commitlint.config.js` 文件复制到您的项目根目录
+- 编辑你的 `.package.json` 文件
+
+```json
+{
+  "scripts": {
+    "lint": "lint-staged",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{vue,js,jsx,ts,tsx,json}": [
+      "eslint --fix",
+      "git add ." // 请注意，所有文件都自动保存在这里，请使用 `.gitignore`
+    ]
+  }
+}
+```
+
+## 其他配置文件
+
+- `.editorconfig` - 编辑器配置
+- `.gitignore` Git忽略特殊文件
+- `LICENSE` 开源许可证
+- `netlify.toml` Netlify 平台配置
+- `pnpm-workspace.yaml` 定义 的根目录并使您能够从工作空间中包含/排除目录。
+- `renovate.json` 使用 renovate 监控第三方相关更新
 
 ## 也可以查看
 
