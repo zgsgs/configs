@@ -1,6 +1,6 @@
 {
   "name": "@zgsgs/eslint-config",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "private": true,
   "keywords": [
     "eslint"
@@ -14,7 +14,7 @@
   "scripts": {
     "lint": "lint-staged",
     "prepare": "husky install && pnpm -r run stub",
-    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public"
+    "release": "bumpp package.json packages/*/package.json --commit \"ci: release v%s\" --push --tag && pnpm -r publish --access public"
   },
   "bugs": {
     "url": "https://github.com/zgsgs/configs/issues"
