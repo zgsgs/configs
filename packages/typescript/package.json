@@ -1,0 +1,27 @@
+{
+  "name": "@zgsgs/eslint-config-ts",
+  "version": "0.0.6",
+  "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "author": "zgsgs <2087108700@qq.com> (https://github.com/zgsgs)",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.4.0",
+    "typescript": ">=3.9"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.20.0",
+    "@typescript-eslint/parser": "^5.20.0",
+    "@zgsgs/eslint-config-basic": "workspace:*"
+  },
+  "devDependencies": {
+    "eslint": "^8.14.0"
+  }
+}
