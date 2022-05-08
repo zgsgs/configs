@@ -22,6 +22,6 @@
     "@zgsgs/eslint-config-basic": "workspace:*"
   },
   "devDependencies": {
-    "eslint": "^8.14.0"
+    "eslint": "8.15.0"
   }
 }
