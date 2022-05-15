@@ -1,0 +1,37 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "types": [
+      "node",
+      "unplugin-icons/types/vue",
+      "vite/client",
+      "vue/ref-macros",
+      "vite-plugin-pages/client",
+      "vite-plugin-vue-layouts/client"
+    ],
+    "paths": {
+      "~/*": [
+        "./*"
+      ],
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "src/**/*.vue",
+    "build/**/*.ts",
+    "mock/**/*.ts",
+    "test/**/*.ts",
+    "types/**/*.d.ts",
+    ".env.config.*",
+    "vite.config.*"
+  ],
+  "exclude": [
+    "/dist/**",
+    "node_modules",
+    "cypress"
+  ]
+}
