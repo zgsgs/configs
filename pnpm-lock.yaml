@@ -40,7 +40,7 @@ importers:
       eslint-plugin-n: ^15.1.0
       eslint-plugin-promise: ^6.0.0
       eslint-plugin-unicorn: ^42.0.0
-      eslint-plugin-vue: ^8.7.1
+      eslint-plugin-vue: ^9.0.0
       eslint-plugin-yml: ^0.15.0
       jsonc-eslint-parser: ^2.1.0
       yaml-eslint-parser: ^0.5.0
@@ -56,7 +56,7 @@ importers:
       eslint-plugin-n: 15.2.0_eslint@8.15.0
       eslint-plugin-promise: 6.0.0_eslint@8.15.0
       eslint-plugin-unicorn: 42.0.0_eslint@8.15.0
-      eslint-plugin-vue: 8.7.1_eslint@8.15.0
+      eslint-plugin-vue: 9.0.0_eslint@8.15.0
       eslint-plugin-yml: 0.15.0_eslint@8.15.0
       jsonc-eslint-parser: 2.1.0
       yaml-eslint-parser: 0.5.0
@@ -137,10 +137,10 @@ importers:
     specifiers:
       '@zgsgs/eslint-config-ts': workspace:*
       eslint: 8.15.0
-      eslint-plugin-vue: ^8.7.1
+      eslint-plugin-vue: ^9.0.0
     dependencies:
       '@zgsgs/eslint-config-ts': link:../typescript
-      eslint-plugin-vue: 8.7.1_eslint@8.15.0
+      eslint-plugin-vue: 9.0.0_eslint@8.15.0
     devDependencies:
       eslint: 8.15.0
 
@@ -1040,7 +1040,7 @@ packages:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
 
   /boolbase/1.0.0:
-    resolution: {integrity: sha1-aN/1++YMUes3cl6p4+0xDcwed24=}
+    resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
     dev: false
 
   /brace-expansion/1.1.11:
@@ -2216,9 +2216,9 @@ packages:
       strip-indent: 3.0.0
     dev: false
 
-  /eslint-plugin-vue/8.7.1_eslint@8.15.0:
-    resolution: {integrity: sha512-28sbtm4l4cOzoO1LtzQPxfxhQABararUb1JtqusQqObJpWX2e/gmVyeYVfepizPFne0Q5cILkYGiBoV36L12Wg==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+  /eslint-plugin-vue/9.0.0_eslint@8.15.0:
+    resolution: {integrity: sha512-UD1uQp8bzMi1b0/YS1ErmZY2/zJ7YVcVp40KniccN+yka0Agji/5X3SJ/gmrjFYXpEaXRebxa49uegZ4NamFHg==}
+    engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
     dependencies:
@@ -2228,7 +2228,8 @@ packages:
       nth-check: 2.0.1
       postcss-selector-parser: 6.0.10
       semver: 7.3.7
-      vue-eslint-parser: 8.3.0_eslint@8.15.0
+      vue-eslint-parser: 9.0.2_eslint@8.15.0
+      xml-name-validator: 4.0.0
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -2352,7 +2353,6 @@ packages:
       acorn: 8.7.1
       acorn-jsx: 5.3.2_acorn@8.7.1
       eslint-visitor-keys: 3.3.0
-    dev: true
 
   /esquery/1.4.0:
     resolution: {integrity: sha512-cCDispWt5vHHtwMY2YrAQ4ibFkAL8RbH5YGBnZBc90MolvvfkkQcJro/aZiAQUlQ3qgrYS6D6v8Gc5G5CQsc9w==}
@@ -4252,7 +4252,7 @@ packages:
     dev: true
 
   /util-deprecate/1.0.2:
-    resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
+    resolution: {integrity: sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=}
 
   /v8-compile-cache-lib/3.0.1:
     resolution: {integrity: sha512-wa7YjyUGfNZngI/vtK0UHAN+lgDCxBPCylVXGp0zu59Fz5aiGtNXaq3DhIov063MorB+VfufLh3JlF2KdTK3xg==}
@@ -4324,9 +4324,9 @@ packages:
       - stylus
     dev: true
 
-  /vue-eslint-parser/8.3.0_eslint@8.15.0:
-    resolution: {integrity: sha512-dzHGG3+sYwSf6zFBa0Gi9ZDshD7+ad14DGOdTLjruRVgZXe2J+DcZ9iUhyR48z5g1PqRa20yt3Njna/veLJL/g==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+  /vue-eslint-parser/9.0.2_eslint@8.15.0:
+    resolution: {integrity: sha512-uCPQwTGjOtAYrwnU+76pYxalhjsh7iFBsHwBqDHiOPTxtICDaraO4Szw54WFTNZTAEsgHHzqFOu1mmnBOBRzDA==}
+    engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=6.0.0'
     dependencies:
@@ -4334,7 +4334,7 @@ packages:
       eslint: 8.15.0
       eslint-scope: 7.1.1
       eslint-visitor-keys: 3.3.0
-      espree: 9.3.1
+      espree: 9.3.2
       esquery: 1.4.0
       lodash: 4.17.21
       semver: 7.3.7
@@ -4386,6 +4386,11 @@ packages:
   /wrappy/1.0.2:
     resolution: {integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=}
     dev: true
+
+  /xml-name-validator/4.0.0:
+    resolution: {integrity: sha512-ICP2e+jsHvAj2E2lIHxa5tjXRlKDJo4IdvPvCXbXQGdzSfmSpNVyIKMvoZHjDY9DP0zV17iI85o90vRFXNccRw==}
+    engines: {node: '>=12'}
+    dev: false
 
   /y18n/5.0.8:
     resolution: {integrity: sha512-0pfFzegeDWJHJIAmTLRP2DwHjdF5s7jo9tuztdQxAhINCdvS+3nGINqPd00AphqJR/0LhANUS6/+7SCb98YOfA==}
