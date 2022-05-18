@@ -41,7 +41,7 @@ importers:
       eslint-plugin-promise: ^6.0.0
       eslint-plugin-unicorn: ^42.0.0
       eslint-plugin-vue: ^8.7.1
-      eslint-plugin-yml: ^0.15.0
+      eslint-plugin-yml: ^1.0.0
       jsonc-eslint-parser: ^2.1.0
       yaml-eslint-parser: ^0.5.0
     dependencies:
@@ -57,7 +57,7 @@ importers:
       eslint-plugin-promise: 6.0.0_eslint@8.15.0
       eslint-plugin-unicorn: 42.0.0_eslint@8.15.0
       eslint-plugin-vue: 8.7.1_eslint@8.15.0
-      eslint-plugin-yml: 0.15.0_eslint@8.15.0
+      eslint-plugin-yml: 1.0.0_eslint@8.15.0
       jsonc-eslint-parser: 2.1.0
       yaml-eslint-parser: 0.5.0
     devDependencies:
@@ -74,7 +74,7 @@ importers:
       eslint-plugin-n: ^15.1.0
       eslint-plugin-promise: ^6.0.0
       eslint-plugin-unicorn: ^42.0.0
-      eslint-plugin-yml: ^0.15.0
+      eslint-plugin-yml: ^1.0.0
       eslint-plugin-zgsgs: workspace:*
       jsonc-eslint-parser: ^2.1.0
       yaml-eslint-parser: ^0.5.0
@@ -87,7 +87,7 @@ importers:
       eslint-plugin-n: 15.2.0_eslint@8.15.0
       eslint-plugin-promise: 6.0.0_eslint@8.15.0
       eslint-plugin-unicorn: 42.0.0_eslint@8.15.0
-      eslint-plugin-yml: 0.15.0_eslint@8.15.0
+      eslint-plugin-yml: 1.0.0_eslint@8.15.0
       eslint-plugin-zgsgs: link:../eslint-plugin-zgsgs
       jsonc-eslint-parser: 2.1.0
       yaml-eslint-parser: 0.5.0
@@ -2233,9 +2233,9 @@ packages:
       - supports-color
     dev: false
 
-  /eslint-plugin-yml/0.15.0_eslint@8.15.0:
-    resolution: {integrity: sha512-fRx7wNmRvK2FjwCmnsTm71FcHlmH7eMyXpa/GgfwAfb/7RDH0XeOaM8Z8KupYxoizYu8eBLGcPv1DzRZzvhnww==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+  /eslint-plugin-yml/1.0.0_eslint@8.15.0:
+    resolution: {integrity: sha512-0RVoUFh5vpznE2DIP5agSpWO/nU8GgAWwoTAHWopU2X+1SCB5ykHU6DwS0GrZ5Hvejtk6CcADQllpQQJB4C5QA==}
+    engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=6.0.0'
     dependencies:
@@ -2243,7 +2243,7 @@ packages:
       eslint: 8.15.0
       lodash: 4.17.21
       natural-compare: 1.4.0
-      yaml-eslint-parser: 0.5.0
+      yaml-eslint-parser: 1.0.1
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -4404,9 +4404,23 @@ packages:
       yaml: 1.10.2
     dev: false
 
+  /yaml-eslint-parser/1.0.1:
+    resolution: {integrity: sha512-acQYWneSXwnJgPQbTyJvDxWx9zlJ/rq267p/zzQMSCE7ljJxQ8elefsQase1gEIJMo+pIqmLRczoo7fPt6VbKQ==}
+    engines: {node: ^14.17.0 || >=16.0.0}
+    dependencies:
+      eslint-visitor-keys: 3.3.0
+      lodash: 4.17.21
+      yaml: 2.1.0
+    dev: false
+
   /yaml/1.10.2:
     resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
     engines: {node: '>= 6'}
+
+  /yaml/2.1.0:
+    resolution: {integrity: sha512-OuAINfTsoJrY5H7CBWnKZhX6nZciXBydrMtTHr1dC4nP40X5jyTIVlogZHxSlVZM8zSgXRfgZGsaHF4+pV+JRw==}
+    engines: {node: '>= 14'}
+    dev: false
 
   /yargs-parser/20.2.9:
     resolution: {integrity: sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w==}
