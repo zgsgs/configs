@@ -21,8 +21,8 @@
   },
   "homepage": "https://github.com/zgsgs/configs#readme",
   "devDependencies": {
-    "@commitlint/cli": "^16.2.4",
-    "@commitlint/config-conventional": "^16.2.4",
+    "@commitlint/cli": "^19.0.0",
+    "@commitlint/config-conventional": "^19.0.0",
     "@vue/tsconfig": "^0.1.3",
     "@zgsgs/eslint-config": "workspace:*",
     "bumpp": "7.1.1",
